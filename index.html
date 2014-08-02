@@ -90,7 +90,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About Me</h2>
-                <p>Career wise, I've had the opportunity to be with some of the best companies in Boston to work for. Starting off small with engineers just like me in a small garage in Milton, set the tone the next couple of years. With only a couple of graduate level courses under my belt, Bostig Engineering took me on as a php developer, integrating software for innovation. Fast forward to Rakuten, one of the top ten largest software companies in the world, where I took on the role of software engineer, quickly adapting to the fast-pace arena of open-source Software as a Service.</p>
+                <p>Master of Science in Computer Science - Bachelor of Fine Art<br />Career wise, I've had the opportunity to be with some of the best companies in Boston to work for. Starting off small with engineers just like me in a small garage in Milton, set the tone the next couple of years. With only a couple of graduate level courses under my belt, Bostig Engineering took me on as a php developer, integrating software for innovation. Fast forward to Rakuten, one of the top ten largest software companies in the world, where I took on the role of software engineer, quickly adapting to the fast-pace arena of open-source Software as a Service.</p>
             </div>
         </div>
     </section>
@@ -147,11 +147,28 @@
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEx_H7t4AQWxHWod6BIdnmx-LDnMr1Bd8&sensor=false"></script>
-
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
+
+    <!-- Google Maps API v3 -->
+    <script>
+        function initialize () {
+            var mapOptions = {
+                center: new google.maps.LatLng(-34.397, 150.644),
+                zoom: 8
+            };
+            var map = new google.maps.Map(document.getElementById("map"),mapOptions);
+        }
+
+        function loadScript() {
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&callback=initialize&key=AIzaSyAEx_H7t4AQWxHWod6BIdnmx-LDnMr1Bd8';
+            document.body.appendChild(script);
+        }
+
+        window.onload = loadScript;
+    </script>
 
 </body>
 
