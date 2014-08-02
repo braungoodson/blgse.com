@@ -161,21 +161,12 @@
             var styles = [
               {
                 stylers: [
-                  { hue: "#ffffff" },
-                  { saturation: -100 }
-                ]
-              },{
-                featureType: "road",
-                elementType: "geometry",
-                stylers: [
-                  { lightness: 0 },
-                  { visibility: "simplified" }
-                ]
-              },{
-                featureType: "road",
-                elementType: "labels",
-                stylers: [
-                  { visibility: "off" }
+                  { gamma: 0.29 },
+                  { hue: "#2200ff" },
+                  { saturation: -100 },
+                  { visibility: "simplified" },
+                  { invert_lightness: true },
+                  { lightness: -4 }
                 ]
               }
             ];
