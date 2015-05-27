@@ -1,0 +1,17 @@
+nginx:
+  build: ./nginx
+  volumes:
+    - .:/etc/nginx/sites-enabled
+    - .:/var/log/nginx
+  ports:
+  	- "80:80"
+  links:
+    - blgse
+
+blgse:
+  build: ./blgse
+  command: npm install && npm start
+  volumes:
+    - ./blgse:/home/blgse
+  ports:
+    - "30000"
