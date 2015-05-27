@@ -4,7 +4,7 @@ nginx:
     - .:/etc/nginx/sites-enabled
     - .:/var/log/nginx
   ports:
-  	- "80:80"
+    - "80:80"
   links:
     - blgse
 
