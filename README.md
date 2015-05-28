@@ -1,10 +1,11 @@
 blgse.com
 ======
 
-source code for blgse.com
+foo
 
 usage
 ======
 
-    $ npm install
-    $ npm start
+    $ git clone https://github.com/braungoodson/blgse.com
+    $ cd blgse.com
+    $ docker-compose up -d
