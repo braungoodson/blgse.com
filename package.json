@@ -1,6 +1,6 @@
 {
   "name": "blgse.com",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "source code for blgse.com",
   "main": "index.js",
   "scripts": {
